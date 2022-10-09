@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Pokédex",
+    "slug": "expo-pokedex",
+    "version": "0.0.1",
+    "githubUrl": "https://github.com/carlos3g/pokedex",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FFFFFF",
+    "primaryColor": "#FFFFFF",
+    "icon": "./src/assets/images/icon.png",
+    "splash": {
+      "image": "./src/assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
+    "updates": {
+      "enabled": false
+    },
+    "assetBundlePatterns": ["**/*"],
+
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "androidStatusBar": {
+      "barStyle": "dark-content",
+      "backgroundColor": "#FFFFFF"
+    },
+    "androidNavigationBar": {
+      "barStyle": "dark-content",
+      "backgroundColor": "#FFFFFF"
+    },
+
+    "ios": {
+      "supportsTablet": true
+    },
+
+    "web": {
+      "favicon": "./src/assets/images/favicon.png"
+    }
+  }
+}
