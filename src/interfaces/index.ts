@@ -1,0 +1,16 @@
+export { ApiPaginatedResponse } from './ApiPaginatedResponse';
+export { Name } from './Name';
+export { NamedApiResource } from './NamedApiResource';
+export { PokemonAbility } from './PokemonAbility';
+export { PokemonForm } from './PokemonForm';
+export { PokemonFormSprites } from './PokemonFormSprites';
+export { PokemonFormType } from './PokemonFormType';
+export { PokemonHeldItem } from './PokemonHeldItem';
+export { PokemonHeldItemVersion } from './PokemonHeldItemVersion';
+export { PokemonMove } from './PokemonMove';
+export { PokemonMoveVersion } from './PokemonMoveVersion';
+export { PokemonSprites } from './PokemonSprites';
+export { PokemonStat } from './PokemonStat';
+export { PokemonType } from './PokemonType';
+export { PokemonTypePast } from './PokemonTypePast';
+export { VersionGameIndex } from './VersionGameIndex';
