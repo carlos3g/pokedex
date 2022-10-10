@@ -8,24 +8,24 @@ const api = axios.create({
 });
 
 interface getPokemonsProps {
-  params: {
-    limit: number;
+  params?: {
+    limit?: number;
   };
-  page: number;
+  page?: number;
 }
 
 interface getPokemonProps {
-  params: {
-    id: number;
-    name: string;
+  params?: {
+    id?: number;
+    name?: string;
   };
 }
 
 export const pokemonService = {
-  async getPokemons(props: getPokemonsProps): Promise<ApiPaginatedResponse> {
+  async getPokemons(props: getPokemonsProps = {}): Promise<ApiPaginatedResponse> {
     const { params, page } = props;
 
-    const limit = params.limit ? params.limit : 20;
+    const limit = params?.limit ? params.limit : 20;
     const offset = typeof page === 'number' ? limit * page : undefined;
 
     const { data } = await api.get<ApiPaginatedResponse>('/pokemon', {
@@ -38,11 +38,11 @@ export const pokemonService = {
     return data;
   },
 
-  async getPokemon(props: getPokemonProps): Promise<Pokemon> {
+  async getPokemon(props: getPokemonProps = {}): Promise<Pokemon> {
     const { params } = props;
-    const pokemonIdentifier = params.id || params.name;
+    const pokemonIdentifier = params?.id || params?.name;
 
-    const { data } = await api.get<Pokemon>(`/pokemon/${pokemonIdentifier}`, {
+    const { data } = await api.get<Pokemon>(`/pokemon/${pokemonIdentifier as string}`, {
       params,
     });
 

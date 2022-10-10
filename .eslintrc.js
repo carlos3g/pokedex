@@ -41,5 +41,8 @@ module.exports = {
     'import/prefer-default-export': 0,
     '@typescript-eslint/unbound-method': 0,
     'global-require': 0,
+    'no-void': 0,
+    '@typescript-eslint/no-var-requires': 0,
+    'react/require-default-props': 0,
   },
 };
