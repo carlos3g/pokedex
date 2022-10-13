@@ -7,4 +7,13 @@ export interface PokemonSprites {
   back_shiny: string;
   back_female: string;
   back_shiny_female: string;
+  other: {
+    'official-artwork': {
+      front_default: string;
+      front_female: string;
+    };
+    dream_world: {
+      front_default: string;
+    };
+  };
 }
