@@ -81,8 +81,8 @@ export const colors = {
   },
   gradients: {
     vector: ['#FFFFFF1E', '#FFFFFF00'],
-    pokeball: ['#F5F5F5', '#FFFFFF'],
     vectorGrey: ['#E5E5E5', '#F5F5F500'],
+    pokeball: ['#F5F5F57F', '#FFFFFF'],
     pokeballGrey: ['#ECECEC', '#F5F5F5'],
     vectorWhite: ['#FFFFFF1E', '#FFFFFF00'],
     pokeballWhite: ['#FFFFFF0A', '#FFFFFF00'],
